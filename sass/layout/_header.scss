@@ -1,0 +1,27 @@
+//texte après la localisation
+.more {
+    @include flex;
+    flex-direction: column;
+    background-color: $colour-Background;
+    height: auto;
+
+    &__propose {
+        @include flex;
+        flex-direction: column;
+        
+        &__argument {
+            padding: 5% 0% 8% 0%;
+            width: 90%;
+            font-size: 130%;
+            font-weight: 300;
+            text-align: center;
+        }
+    
+    h2 {
+        padding-top: 10%;
+        width: 70%;
+        font-size: 170%;
+        text-align: center;
+    }
+    }
+}
