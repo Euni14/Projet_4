@@ -2,6 +2,7 @@
     --main-color: #9356DC;
     --second-color: #FF79DA;  
     --tertiary-color: #99E2D0;
+    --quaternay-color: #353535;
 }
 
 .more__btn {
@@ -11,15 +12,15 @@
     width: 60%;
     padding: 4% 0% 4% 0%; 
     cursor: pointer;
-    transition: all .2s;
-    box-shadow:  0px 0px 5px -5px black;
+    transition: all .3s;
+    box-shadow:  1.5px 1.5px 6px 0.1px  var(--quaternay-color);
     background: linear-gradient(to right bottom, var(--second-color) 0%, var(--main-color) 100%);  
-    background-color: rgb(156, 140, 140);
     color: white;
     font-size: 110%;
+    margin-bottom: 50px;
 }  
 .more__btn:hover { 
-    background-color: white;
-    box-shadow: 0px 0px 60px -20px  rgb(156, 140, 140);
+    transform: scale(1.02);
+    box-shadow: 10px 10px 60px -20px  var(--quaternay-color);
     opacity: 0.8;
 }
