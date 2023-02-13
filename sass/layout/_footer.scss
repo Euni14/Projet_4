@@ -1,0 +1,19 @@
+.footer {
+    padding: 10% 0% 10% 10% ;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    font-weight: 300;
+    
+    background-color: black;
+    a {
+        color: white;
+        font-size: 120%;
+    }
+    .footer__logo{
+        color: white;
+        font-size: 150%;
+        font-weight: 300;
+    }
+
+}

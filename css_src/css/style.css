@@ -7,6 +7,10 @@
   font-family: "Shrikhand", sans-serif;
 }
 
+.footer__logo {
+  font-family: "Shrikhand", sans-serif;
+}
+
 .head__map {
   display: flex;
   align-items: center;
@@ -131,14 +135,14 @@
   box-shadow: 1.5px 1.5px 15px -2px #353535;
 }
 .board__stage__icone:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .board__stage__path {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #9356DC;
-  background-color: #9356DC;
+  border: 2px solid #9356dc;
+  background-color: #9356dc;
   border-radius: 40px;
   padding: 13px;
   margin-right: -12px;
@@ -149,6 +153,24 @@
 .board__stage__path__first {
   font-size: 80%;
   color: white;
+}
+
+.footer {
+  padding: 10% 0% 10% 10%;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  font-weight: 300;
+  background-color: black;
+}
+.footer a {
+  color: white;
+  font-size: 120%;
+}
+.footer .footer__logo {
+  color: white;
+  font-size: 150%;
+  font-weight: 300;
 }
 
 .more {
@@ -177,6 +199,69 @@
   width: 70%;
   font-size: 170%;
   text-align: center;
+}
+
+.restaurant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding-top: 5%;
+}
+.restaurant__various {
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10%;
+  width: 95%;
+  height: 340px;
+}
+.restaurant__various__img {
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 240px;
+}
+.restaurant__various__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+.restaurant__various__text__description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3.5% 0% 0% 3.5%;
+  line-height: 30px;
+  color: black;
+  font-size: 125%;
+}
+.restaurant__various__text__description h5 {
+  font-size: 120%;
+  font-weight: bold;
+}
+.restaurant__various__text__favorite {
+  font-size: 200%;
+}
+.restaurant .new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008766;
+  font-size: 120%;
+  font-weight: bold;
+  position: absolute;
+  padding: 3%;
+  top: 5%;
+  left: 70%;
+  border: 0;
+  width: 25%;
+  height: 40px;
+  z-index: 1;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
