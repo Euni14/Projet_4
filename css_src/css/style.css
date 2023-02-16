@@ -11,6 +11,17 @@
   font-family: "Shrikhand", sans-serif;
 }
 
+.dish {
+  display: flex;
+  flex-direction: column;
+}
+.dish img {
+  /* position: absolute;*/
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
 .head__map {
   display: flex;
   align-items: center;
@@ -68,18 +79,28 @@
   width: 60%;
   padding: 4% 0% 4% 0%;
   cursor: pointer;
-  transition: all 0.3s;
   box-shadow: 1.5px 1.5px 6px 0.1px var(--quaternay-color);
   background: linear-gradient(to right bottom, var(--second-color) 0%, var(--main-color) 100%);
   color: white;
   font-size: 110%;
   margin-bottom: 50px;
+  transform: scale(1);
+  transition: transform 0.5s;
 }
 
 .more__btn:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   box-shadow: 10px 10px 60px -20px var(--quaternay-color);
   opacity: 0.8;
+}
+
+.fa-regular.fa-heart:hover {
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  transition: background-color 5s;
 }
 
 .head__logo {
@@ -201,6 +222,35 @@
   text-align: center;
 }
 
+.palette {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dish__content {
+  display: block;
+  margin: auto;
+  margin-top: -50px;
+  background-color: #F6F6F6;
+  border: 0;
+  border-radius: 40px 40px 0px 0px;
+  width: 100%;
+}
+.dish__content__resto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 95%;
+}
+.dish__content__resto__palette {
+  margin-top: 50px;
+  font-size: 200%;
+  font-weight: 300;
+}
+
 .restaurant {
   display: flex;
   align-items: center;
@@ -244,7 +294,9 @@
   font-weight: bold;
 }
 .restaurant__various__text__favorite {
+  text-decoration: none;
   font-size: 200%;
+  cursor: pointer;
 }
 .restaurant .new {
   display: flex;

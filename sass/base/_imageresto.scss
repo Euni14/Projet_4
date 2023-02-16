@@ -1,2 +1,12 @@
 
+.dish {
+    display: flex;
+    flex-direction: column;
+    img {
+       /* position: absolute;*/
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
 

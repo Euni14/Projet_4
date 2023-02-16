@@ -41,15 +41,20 @@
             }
         }
         &__favorite {
+            text-decoration: none;
           font-size: 200%;
+          cursor: pointer;
         }
     }
     }
 
     //coeur pour noter les restaurant
+ 
+
+  
 
 
-    
+    //cadre "nouveau"
     .new {
         @include flex;
         color: $colour-new;
