@@ -85,7 +85,7 @@
   font-size: 110%;
   margin-bottom: 50px;
   transform: scale(1);
-  transition: transform 0.5s;
+  transition: all 0.5s;
 }
 
 .more__btn:hover {
@@ -100,13 +100,12 @@
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 900;
-  transition: background-color 5s;
 }
 
 .head__logo {
   position: relative;
   width: 100%;
-  height: 70px;
+  height: 80px;
   box-shadow: 0px 1.5px 5px #353535;
   display: flex;
   align-items: center;
@@ -225,13 +224,19 @@
 .palette {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  padding: 0% 3% 0% 3%;
+}
+
+.fa-sharp.fa-solid.fa-arrow-left {
+  color: black;
+  font-size: 150%;
 }
 
 .dish__content {
-  display: block;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
   margin-top: -50px;
   background-color: #F6F6F6;
   border: 0;
@@ -239,16 +244,39 @@
   width: 100%;
 }
 .dish__content__resto {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  display: block;
+  margin: auto;
   width: 95%;
 }
-.dish__content__resto__palette {
-  margin-top: 50px;
+.dish__content__resto__heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 40px;
+}
+.dish__content__resto__heart__palette {
+  margin: 50px 0px 30px 0px;
   font-size: 200%;
   font-weight: 300;
+}
+.dish__content__resto__menu h4 {
+  font-size: 120%;
+  font-weight: 300;
+  margin-bottom: 20px;
+  border-bottom-width: 30%;
+  font-size: 120%;
+  position: relative;
+  line-height: 5%;
+}
+.dish__content__resto__menu h4:before {
+  position: absolute;
+  left: 0;
+  top: 1.2em;
+  height: 0;
+  width: 14%;
+  content: "";
+  border-top: 4px solid #99E2D0;
 }
 
 .restaurant {

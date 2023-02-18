@@ -19,6 +19,7 @@
             height: 240px;
 
         }
+
         &__text {
             display: flex;
             flex-direction: row;
@@ -26,32 +27,33 @@
             justify-content: space-between;
             width: 95%;
 
-        &__description {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            padding: 3.5% 0% 0% 3.5%;
-            line-height: 30px;
-            color: black;
-            font-size: 125%;
+            &__description {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 3.5% 0% 0% 3.5%;
+                line-height: 30px;
+                color: black;
+                font-size: 125%;
 
-            h5 {
-                font-size: 120%;
-                font-weight: bold;
+                h5 {
+                    font-size: 120%;
+                    font-weight: bold;
+                }
+            }
+
+            &__favorite {
+                text-decoration: none;
+                font-size: 200%;
+                cursor: pointer;
             }
         }
-        &__favorite {
-            text-decoration: none;
-          font-size: 200%;
-          cursor: pointer;
-        }
-    }
     }
 
     //coeur pour noter les restaurant
- 
 
-  
+
+
 
 
     //cadre "nouveau"

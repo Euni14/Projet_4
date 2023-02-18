@@ -25,11 +25,20 @@
    
     }
 }
+//header du page la palette du gout
 
 .palette {
     display: flex;
     flex-direction: row;
-   justify-content: flex-start;
+   justify-content: space-between;
    align-items: center;
-   }
+   padding: 0% 3% 0% 3%;
+}
+.fa-sharp.fa-solid.fa-arrow-left {
+    color: black;
+    font-size: 150%;
+}
+   
+   
+   
 
