@@ -108,6 +108,37 @@
   background-color: #99E2D0;
 }
 
+.dish__content__resto__menu__box__icon {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #15DEA5;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #15DEA5;
+  width: 20%;
+  height: auto;
+  opacity: 0.4;
+
+  &__check {
+      border: 0;
+      border-radius: 25px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      z-index: 2;
+  }*/
+  width: 0%;
+  transition: opacity 1s, width 1s;
+}
+.dish__content__resto__menu__box__icon .fa-solid.fa-check {
+  font-size: 1rem;
+  color: #15DEA5;
+  opacity: 0;
+}
+
 .head__logo {
   position: relative;
   width: 100%;
@@ -283,7 +314,7 @@
 .dish__content__resto__menu h4:before {
   position: absolute;
   left: 0;
-  top: 1.5rem;
+  top: 1rem;
   height: 0;
   width: 14%;
   content: "";
@@ -291,20 +322,53 @@
 }
 .dish__content__resto__menu__box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   border: 0;
-  padding: 4%;
   border-radius: 15px;
   background-color: white;
   box-shadow: 1.5px 1.5px 10px -2px #353535;
 }
-.dish__content__resto__menu__box__price {
+.dish__content__resto__menu__box:hover__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: auto;
+  border: 2px solid #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  opacity: 0.9;
+}
+.dish__content__resto__menu__box:hover__icon__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+.dish__content__resto__menu__box:hover__icon .fa-solid.fa-check {
+  font-size: 1rem;
+  color: #99E2D0;
+  opacity: 1;
+}
+.dish__content__resto__menu__box__change {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  min-width: 80%;
+  width: 100%;
+}
+.dish__content__resto__menu__box__change__price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
 }
-.dish__content__resto__menu__box__price p {
+.dish__content__resto__menu__box__change__price p {
   width: 15%;
   text-overflow: ellipsis;
   white-space: nowrap;
