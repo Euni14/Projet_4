@@ -36,7 +36,7 @@
     background-color: $colour-tertiary;
 }
 
-//bouton pour le check validation du menu
+//bouton vert check choisir le menu
 .dish__content__resto__menu__box__icon {
 width: 0%;
 transition: opacity 1s, width 1s;
@@ -48,3 +48,17 @@ transition: opacity 1s, width 1s;
 
     }
 }
+// bouton degrage valider la commande
+.dish__content__resto__menu__btn {
+    @include flex;
+}
+.btn {    
+    @include button;
+    margin: 40px 0px 40px 0px;
+    width: 50%;
+    font-size: 130%;
+}
+.btn:hover {
+    @include button_hover
+ }
+
