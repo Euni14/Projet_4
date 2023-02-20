@@ -7,24 +7,14 @@
 
 .more__btn {
     @include flex;
-    border: 0;
-    border-radius: 40px;
-    width: 60%;
-    padding: 4% 0% 4% 0%;
-    cursor: pointer;
-    box-shadow: 1.5px 1.5px 6px 0.1px var(--quaternay-color);
-    background: linear-gradient(to right bottom, var(--second-color) 0%, var(--main-color) 100%);
-    color: white;
-    font-size: 110%;
+    @include button;
     margin-bottom: 50px;
-    transform: scale(1);
-    transition: all 0.5s;
+    font-size: 110%;
+    width: 60%;
 }
 
 .more__btn:hover {
-    transform: scale(1.05);
-    box-shadow: 10px 10px 60px -20px var(--quaternay-color);
-    opacity: 0.8;
+   @include button_hover
 }
 
 // les coeur sur les image de resto
@@ -48,27 +38,6 @@
 
 //bouton pour le check validation du menu
 .dish__content__resto__menu__box__icon {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #15DEA5;
-    border-radius: 0px 15px 15px 0px;
-    background-color: #15DEA5;
-    width: 20%;
-    height: auto;
-    opacity: 0.4;
-
-    &__check {
-        border: 0;
-        border-radius: 25px;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        z-index: 2;
-    }*/
 width: 0%;
 transition: opacity 1s, width 1s;
     .fa-solid.fa-check {

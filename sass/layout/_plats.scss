@@ -64,7 +64,7 @@
                 border-radius: 15px;
                 background-color: white;
                 box-shadow: 1.5px 1.5px 10px -2px $colour-grey-1;                
-                &:hover{
+                &:hover & {
                     &__icon {
                         display: flex;
                         justify-content: center;
@@ -74,7 +74,7 @@
                         border: 2px solid $colour-tertiary;
                         border-radius: 0px 15px 15px 0px;
                         background-color: $colour-tertiary;
-                        opacity: 0.9;
+                        opacity: 0.8;
                         &__check {
                             display: flex;
                             justify-content: center;

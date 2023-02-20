@@ -12,3 +12,20 @@
     justify-content: center;
 }
 
+@mixin button {
+    border: 0;
+    border-radius: 40px;    
+    padding: 4% 0% 4% 0%;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 6px 0.1px var(--quaternay-color);
+    background: linear-gradient(to right bottom, var(--second-color) 0%, var(--main-color) 100%);
+    color: white;    margin-bottom: 50px;    
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+@mixin button_hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 60px -20px var(--quaternay-color);
+    opacity: 0.8;
+}
