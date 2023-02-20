@@ -61,6 +61,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 border: 0;
+               /* opacity: 0;*/
                 border-radius: 15px;
                 background-color: white;
                 box-shadow: 1.5px 1.5px 10px -2px $colour-grey-1;                
@@ -107,6 +108,7 @@
                     justify-content: space-between;
                     align-items: center;
 
+// pour les trois points de suspension
                     p {
                         width: 15%;
                         text-overflow: ellipsis;
@@ -122,3 +124,31 @@
 
     }
 }
+//animation d'affiche du texte
+@keyframes progressive-card {
+    0% {
+        transform:translateX(500px);
+        opacity: 0;
+    }
+    100% {
+        transform:translateX(0px);
+        opacity: 1;
+    }
+  }
+
+  
+
+  .box1{
+    animation: progressive-card 1s forwards;
+    animation-delay: 500ms;
+      }
+    
+      .box2{
+        animation: progressive-card 1s forwards;
+        animation-delay: 1s;
+      }
+    
+      .box3{
+        animation: progressive-card 1s forwards;
+        animation-delay: 1500ms;    
+      }
