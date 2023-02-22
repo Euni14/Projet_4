@@ -7,9 +7,9 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border-top: 10px solid #9356dc;    
-    border-right: 10px solid #ff79da;      
-    border-bottom: 10px solid #99E2D0;     
+    border-top: 10px solid $colour-primary;    
+    border-right: 10px solid $colour-secondary;      
+    border-bottom: 10px solid $colour-tertiary;     
      -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
   }
@@ -26,9 +26,7 @@
   
 
 #animate {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
     position: fixed;
     z-index: 100;
     background-color: #EAEAEA;

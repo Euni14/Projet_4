@@ -1,19 +1,60 @@
 .footer {
-    padding: 10% 0% 10% 10% ;
+    padding: 10% 0% 10% 10%;
     display: flex;
     flex-direction: column;
-    line-height: 40px;
+    line-height: 50px;
     font-weight: 300;
-    
+    margin-top: 15%;
     background-color: black;
-    a {
-        color: white;
-        font-size: 120%;
+
+    @include tablet {
+        line-height: 60px;
+        padding: 10%;
+
     }
-    .footer__logo{
+
+    &__logo {
         color: white;
         font-size: 150%;
         font-weight: 300;
+        @extend .font_title;
+
+        @include tablet {
+            font-size: 180%;
+            margin-bottom: 4%;
+           
+        }
+
     }
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+        
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        &__link {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+
+        a {
+            cursor: pointer;
+            color: white;
+            font-size: 125%;
+
+            @include tablet {
+                font-size: 150%;
+            }
+        }
+
+    }
 }

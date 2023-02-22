@@ -1,7 +1,10 @@
 // logo et header page accueuil
 .head__logo {
     @include logo;
-    @include flex;
+    @include flex;   
+}
+.head__logo__font{
+@extend .font_title;
 }
 //texte après la localisation
 .more {
