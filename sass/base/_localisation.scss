@@ -12,17 +12,26 @@ color: $colour-grey-1;
 font-size: 120%;
 margin-left: 15%;
 padding-right: 8%;
+@include desktop {
+    justify-content: center;
+    margin-left: 0%;
+    padding-right: 0%;
+    padding-left: 5%;
+    
+}
     }
    &__map {
     border: 1px solid $colour-grey-2;
     background-color: $colour-grey-2;
     font-size: 120%;
     font-weight: bold;
+    @include desktop {
+    padding-left: 1.5%;
+    }
     
    } 
    // pour le texte de input
-   ::placeholder {
-    
+   ::placeholder {    
     color: $colour-grey-1;
     
    }

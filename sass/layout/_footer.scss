@@ -12,6 +12,16 @@
         padding: 10%;
 
     }
+    @include desktop {
+       flex-direction: row-reverse;
+       justify-content:right;
+       align-items: flex-end;
+       padding-right: 5%;
+       gap: 40px;
+        
+     }
+   
+
 
     &__logo {
         color: white;
@@ -30,7 +40,12 @@
     &__container {
         display: flex;
         flex-direction: column;
+        @include desktop {
+            flex-direction: row;
+            gap: 40px;
         
+            
+         }
 
         @include tablet {
             display: flex;
@@ -43,7 +58,13 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-
+            @include desktop {                
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    gap: 40px;
+        
+                
+             }
         }
 
         a {

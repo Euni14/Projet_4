@@ -4,7 +4,7 @@
     --tertiary-color: #99E2D0;
     --quaternay-color: #353535;
 }
-
+//bouton pour explorer les restaurants
 .more__btn {
     @include flex;
     @include button;
@@ -15,6 +15,11 @@
       font-size: 160%;  
       width: 45%;
       padding: 3% 0% 3% 0%;
+    }
+    @include desktop {
+        font-size: 120%;
+        width: 350px;        
+        padding: 25px 0px 25px 0px;
     }
 }
 

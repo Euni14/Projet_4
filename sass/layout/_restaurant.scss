@@ -1,81 +1,116 @@
+//images des restaurants et descriptions 
+//du page accueil
 .restaurant {
-    @include flex;
+    display: flex;
     flex-direction: column;
     background-color: $colour-Background;
-    padding-top:12%;
+    margin: auto;
+    padding-top: 6%;
 
- 
-
-    &__various {
-        position: relative;
-        background-color: white;
-        border-radius: 20px;
-        margin-top: 10%;
-        width: 95%;
-        height: 340px;
-        box-shadow: 0px 2px 25px $colour-grey-1; 
-        @include tablet {
-            height: 380px;
-        } 
-
-
-        &__img {
-            object-fit: cover;
-            border-radius: 20px 20px 0px 0px;
-            width: 100%;
-            height: 240px;
-@include tablet {
-    height: 280px;
-}
-     
-
+    &__bigscreen {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        @include desktop {
+            flex-direction: row;
+           justify-content: space-between;
+           width: 95%;
         }
 
-        &__text {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            width: 95%;
-            
-            &__description {
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                padding: 3.5% 0% 0% 3.5%;
-                line-height: 30px;
-                color: black;
-                font-size: 125%;
-                @include tablet {
-        padding: 2% 0% 0% 3.5%;
-        font-size: 130%;
-                }
 
-                h5 {
-                    font-size: 120%;
-                    font-weight: bold;
+        &__various {
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 10%;
+            width: 100%;
+            height: 340px;
+            box-shadow: 0px 2px 25px $colour-grey-1;
+
+            @include tablet {
+                height: 380px;
+            }
+            @include desktop {
+               width: 24%;
+               height: 280px;
+               margin-top: 5%;
+            }
+
+
+            &__img {
+                object-fit: cover;
+                border-radius: 20px 20px 0px 0px;
+                width: 100%;
+                height: 240px;
+
+                @include tablet {
+                    height: 280px;
+                }
+                @include desktop {
+                    width: 100%;
+                    height: 180px;
+                    
+                 }
+     
+
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 95%;
+
+                &__description {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 3.5% 0% 0% 3.5%;
+                    line-height: 30px;
+                    color: black;
+                    font-size: 125%;
+
+                    @include tablet {
+                        padding: 2% 0% 0% 3.5%;
+                        font-size: 130%;
+                    }
+
+                    h5 {
+                        font-size: 120%;
+                        font-weight: bold;
+                    }
                 }
             }
         }
-    }
-    //cadre "nouveau"
-    .new {
-        @include flex;
-        color: $colour-new;
-        font-size: 120%;
-        font-weight: bold;
-        position: absolute;
-        padding: 3%;
-        top: 5%;
-        left: 70%;
-        border: 0;
-        border-radius: 4px;
-        width: 25%;
-        height: 40px;
-        z-index: 1;
-        background-color: $colour-tertiary;
-        @include tablet {
-           border-radius: 6px;
+
+        //cadre "nouveau"
+        .new {
+            @include flex;
+            color: $colour-new;
+            font-size: 120%;
+            font-weight: bold;
+            position: absolute;
+            padding: 3%;
+            top: 5%;
+            left: 70%;
+            border: 0;
+            border-radius: 4px;
+            width: 25%;
+            height: 40px;
+            z-index: 1;
+            background-color: $colour-tertiary;
+
+            @include tablet {
+                border-radius: 6px;
+            }
         }
     }
+}
+
+// position du titre restaurants
+.position {
+    width: 95%;
+    margin: auto;
 }

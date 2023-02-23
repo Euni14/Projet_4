@@ -3,6 +3,7 @@
     @include logo;
     @include flex;   
 }
+//police d'écriture du logo
 .head__logo__font{
 @extend .font_title;
 }
@@ -23,12 +24,18 @@
             font-size: 130%;
             font-weight: 300;
             text-align: center;
+            @include desktop {
+                width: 100%;
+            }
         }
         &__reserve {
             padding-top: 10%;
             width: 70%;
             font-size: 170%;
             text-align: center;
+            @include desktop {
+                width: 100%;
+            }
         }
    
     }
@@ -38,6 +45,7 @@
 .palette {
     @include header_page_menu ;
 }
+// fleche de retour à la page d'accueil
 .fa-sharp.fa-solid.fa-arrow-left {
     color: black;
    

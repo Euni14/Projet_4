@@ -49,108 +49,114 @@
             <section class="board">
 
                 <h2 class="board__title">Fonctionnement</h2>
-                <!--boite :etape a suivre-->
-                <div class="board__stage">
-                    <div class="board__stage__path">
-                        <p class="board__stage__path__first">1</p>
+
+                <div class="board__row">
+                    <!--boite :etape a suivre-->
+                    <div class="board__row__stage">
+                        <div class="board__row__stage__path">
+                            <p class="board__row__stage__path__first">1</p>
+                        </div>
+                        <div class="board__row__stage__icone">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <p>Choisissez un restaurants</p>
+                        </div>
                     </div>
-                    <div class="board__stage__icone">
-                        <i class="fa-solid fa-mobile-screen"></i>
-                        <p>Choisissez un restaurants</p>
+
+                    <div class="board__row__stage">
+                        <div class="board__row__stage__path">
+                            <p class="board__row__stage__path__first">2</p>
+                        </div>
+                        <div class="board__row__stage__icone">
+                            <i class="fa-solid fa-list"></i>
+                            <p>Composez votre menu</p>
+                        </div>
+                    </div>
+
+                    <div class="board__row__stage">
+                        <div class="board__row__stage__path">
+                            <p class="board__row__stage__path__first">3</p>
+                        </div>
+                        <div class="board__row__stage__icone">
+                            <i class="fa-solid fa-store"></i>
+                            <p>Dégustez au restaurants</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="board__stage">
-                    <div class="board__stage__path">
-                        <p class="board__stage__path__first">2</p>
-                    </div>
-                    <div class="board__stage__icone">
-                        <i class="fa-solid fa-list"></i>
-                        <p>Composez votre menu</p>
-                    </div>
-                </div>
-
-                <div class="board__stage">
-                    <div class="board__stage__path">
-                        <p class="board__stage__path__first">3</p>
-                    </div>
-                    <div class="board__stage__icone">
-                        <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurants</p>
-                    </div>
-                </div>
-
             </section>
+            
             <!--images des restaurants et descriptions-->
             <section class="restaurant">
-                <h2 class="board__title">Restaurants</h2>
+
+                <h2 class="board__title position">Restaurants</h2>
                 <!--image-->
 
-                <a class="restaurant__various" href="palette.html">
-                    <div class="new">Nouveau</div>
-                    <img class="restaurant__various__img"
-                        src="./css_src/Images_textes_ohmyfood/images/restaurants/la_palette.jpg"
-                        alt="image du plat du restaurant">
-                    <!--description-->
-                    <div class="restaurant__various__text">
-                        <div class="restaurant__various__text__description">
-                            <h5>La palette du gôut</h5>
-                            <p>Ménilmontant</p>
+                <div class="restaurant__bigscreen">
+                    <a class="restaurant__bigscreen__various" href="palette.html">
+                        <div class="new">Nouveau</div>
+                        <img class="restaurant__bigscreen__various__img"
+                            src="./css_src/Images_textes_ohmyfood/images/restaurants/la_palette.jpg"
+                            alt="image du plat du restaurant">
+                        <!--description-->
+                        <div class="restaurant__bigscreen__various__text">
+                            <div class="restaurant__bigscreen__various__text__description">
+                                <h5>La palette du gôut</h5>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="restaurant__bigscreen__various__text__favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="restaurant__various__text__favorite">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a class="restaurant__various" href="enchante.html">
-                    <div class="new">Nouveau</div>
-                    <img class="restaurant__various__img"
-                        src="./css_src/Images_textes_ohmyfood/images/restaurants/enchanté.jpg"
-                        alt="image du plat du restaurant">
-                    <!--description-->
-                    <div class="restaurant__various__text">
-                        <div class="restaurant__various__text__description">
-                            <h5>La note enchantée</h5>
-                            <p>Charonne</p>
+                    <a class="restaurant__bigscreen__various" href="enchante.html">
+                        <div class="new">Nouveau</div>
+                        <img class="restaurant__bigscreen__various__img"
+                            src="./css_src/Images_textes_ohmyfood/images/restaurants/enchanté.jpg"
+                            alt="image du plat du restaurant">
+                        <!--description-->
+                        <div class="restaurant__bigscreen__various__text">
+                            <div class="restaurant__bigscreen__various__text__description">
+                                <h5>La note enchantée</h5>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="restaurant__bigscreen__various__text__favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="restaurant__various__text__favorite">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a class="restaurant__various" href="lafrancaise.html">
-                    <img class="restaurant__various__img"
-                        src="./css_src/Images_textes_ohmyfood/images/restaurants/lafrancaise.jpg"
-                        alt="image du plat du restaurant">
-                    <!--description-->
-                    <div class="restaurant__various__text">
-                        <div class="restaurant__various__text__description">
-                            <h5>À la française</h5>
-                            <p>Cité Rouge</p>
+                    <a class="restaurant__bigscreen__various" href="lafrancaise.html">
+                        <img class="restaurant__bigscreen__various__img"
+                            src="./css_src/Images_textes_ohmyfood/images/restaurants/lafrancaise.jpg"
+                            alt="image du plat du restaurant">
+                        <!--description-->
+                        <div class="restaurant__bigscreen__various__text">
+                            <div class="restaurant__bigscreen__various__text__description">
+                                <h5>À la française</h5>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="restaurant__bigscreen__various__text__favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="restaurant__various__text__favorite">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a class="restaurant__various" href="delice.html">
-                    <img class="restaurant__various__img"
-                        src="./css_src/Images_textes_ohmyfood/images/restaurants/delice.jpg"
-                        alt="image du plat du restaurant">
-                    <!--description-->
-                    <div class="restaurant__various__text">
-                        <div class="restaurant__various__text__description">
-                            <h5>Le délice des sens</h5>
-                            <p>Folie-Méricourt</p>
+                    <a class="restaurant__bigscreen__various" href="delice.html">
+                        <img class="restaurant__bigscreen__various__img"
+                            src="./css_src/Images_textes_ohmyfood/images/restaurants/delice.jpg"
+                            alt="image du plat du restaurant">
+                        <!--description-->
+                        <div class="restaurant__bigscreen__various__text">
+                            <div class="restaurant__bigscreen__various__text__description">
+                                <h5>Le délice des sens</h5>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="restaurant__bigscreen__various__text__favorite">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="restaurant__various__text__favorite">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </section>
 
         </main>
