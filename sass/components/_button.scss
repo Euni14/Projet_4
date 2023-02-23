@@ -78,6 +78,11 @@ transition: opacity 1s, width 1s;
         font-size: 170%;
         padding: 2.5% 0% 2.5% 0%;
     }
+    @include desktop {
+        width: 25%; 
+font-size: 150%;
+padding: 1% 0% 1% 0%;
+      }
 }
 .btn:hover {
     @include button_hover

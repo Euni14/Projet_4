@@ -9,6 +9,9 @@
         @include tablet {
         height: 450px;
         }
+        @include desktop {
+            height: 480px;
+        }
     }
 }
 

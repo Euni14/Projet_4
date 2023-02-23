@@ -2,6 +2,10 @@
 .head__logo {
     @include logo;
     @include flex;   
+    @include desktop {
+        padding: 1%;
+        font-size: 140%;
+    }
 }
 //police d'écriture du logo
 .head__logo__font{
@@ -44,6 +48,11 @@
 
 .palette {
     @include header_page_menu ;
+    @include desktop {
+        padding: 1%;
+        font-size: 140%;
+    }
+
 }
 // fleche de retour à la page d'accueil
 .fa-sharp.fa-solid.fa-arrow-left {

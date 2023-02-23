@@ -21,6 +21,11 @@
     height: 450px;
   }
 }
+@media (992px < width) {
+  .dish img {
+    height: 480px;
+  }
+}
 
 .head__map {
   display: flex;
@@ -184,6 +189,13 @@
     width: 45%;
     font-size: 170%;
     padding: 2.5% 0% 2.5% 0%;
+  }
+}
+@media (992px < width) {
+  .btn {
+    width: 25%;
+    font-size: 150%;
+    padding: 1% 0% 1% 0%;
   }
 }
 
@@ -384,7 +396,8 @@
     flex-direction: row-reverse;
     justify-content: right;
     align-items: flex-end;
-    padding-right: 5%;
+    padding: 3% 5% 3% 0%;
+    margin-top: 7%;
     gap: 40px;
   }
 }
@@ -449,6 +462,12 @@
   align-items: center;
   justify-content: center;
 }
+@media (992px < width) {
+  .head__logo {
+    padding: 1%;
+    font-size: 140%;
+  }
+}
 
 .more {
   display: flex;
@@ -496,6 +515,12 @@
   font-size: 170%;
   padding: 4%;
 }
+@media (992px < width) {
+  .palette {
+    padding: 1%;
+    font-size: 140%;
+  }
+}
 
 .fa-sharp.fa-solid.fa-arrow-left {
   color: black;
@@ -510,10 +535,25 @@
   border-radius: 40px 40px 0px 0px;
   width: 100%;
 }
+@media (992px < width) {
+  .dish__content {
+    padding: 5% 0% 5% 0%;
+  }
+}
 .dish__content__resto {
   display: block;
   margin: auto;
   width: 95%;
+}
+@media (700px <= width <= 992px) {
+  .dish__content__resto {
+    width: 70%;
+  }
+}
+@media (992px < width) {
+  .dish__content__resto {
+    width: 60%;
+  }
 }
 .dish__content__resto__heart {
   display: flex;
@@ -558,6 +598,11 @@
     margin-top: 10%;
   }
 }
+@media (992px < width) {
+  .dish__content__resto__menu h4 {
+    font-size: 150%;
+  }
+}
 .dish__content__resto__menu h4:before {
   content: "    ";
   position: absolute;
@@ -582,11 +627,6 @@
   border-radius: 15px;
   background-color: white;
   box-shadow: 1.5px 1.5px 10px -2px #353535;
-}
-@media (700px <= width <= 992px) {
-  .dish__content__resto__menu__box {
-    height: 120px;
-  }
 }
 .dish__content__resto__menu__box:hover .dish__content__resto__menu__box__icon {
   display: flex;
@@ -617,7 +657,7 @@
 .dish__content__resto__menu__box__change {
   display: flex;
   flex-direction: column;
-  padding: 4%;
+  padding: 3%;
   min-width: 80%;
   width: 100%;
 }
