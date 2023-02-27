@@ -10,16 +10,16 @@
     border-top: 10px solid $colour-primary;    
     border-right: 10px solid $colour-secondary;      
     border-bottom: 10px solid $colour-tertiary;     
-     -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
+     -webkit-animation: loader 1s linear 10;
+    animation: loader 1s linear 10;
   }
    
-@-webkit-keyframes spin {
+@-webkit-keyframes loader {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
   }
   
-  @keyframes spin {
+  @keyframes loader {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }

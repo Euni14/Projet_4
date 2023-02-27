@@ -181,51 +181,11 @@ font-size: 120%;
   }
  
 
-  .box1{
+  @for $i from 1 through $number-box {
+
+    .box#{$i}
+   {
     animation: progressive-card 3s forwards;
-    animation-delay: 1s;
-      }
-    
-      .box2{
-        animation: progressive-card 3s forwards;
-        animation-delay: 1.5s;
-      }
-    
-      .box3{
-        animation: progressive-card 3s forwards;
-        animation-delay: 2s;    
-      }
-
-      .box4{
-        animation: progressive-card 4s forwards;
-        animation-delay: 2.5s;    
-      }
-
-      .box5{
-        animation: progressive-card 4s forwards;
-        animation-delay: 3s;
-      }
-    
-      .box6{
-        animation: progressive-card 3s forwards;
-        animation-delay: 3.5s;    
-      }
-      
-      .box7{
-        animation: progressive-card 3s forwards;
-        animation-delay: 4s;    
-      }
-      .box8{
-        animation: progressive-card 3s forwards;
-        animation-delay: 4.5s;
-      }
-    
-      .box9{
-        animation: progressive-card 3s forwards;
-        animation-delay: 5s;    
-      }
-      
-      .box10{
-        animation: progressive-card 3s forwards;
-        animation-delay: 5.5s;    
-      }
+    animation-delay: $i * $animation-box-delay;
+    }
+  }
