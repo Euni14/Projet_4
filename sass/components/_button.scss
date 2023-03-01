@@ -28,61 +28,17 @@
 }
 
 // les coeur sur les image de resto
-@-webkit-keyframes heartbeat {
-    from {
-        @include all_hearts;
-        font-size: 230%;
-        @include tablet {
-         font-size: 250%;
-    }
-}
-    to {
-        background: -webkit-linear-gradient(var(--main-color), var(--second-color));
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        font-weight: 900;
-       
-    }
-}
-@keyframes heartbeat {
-    from {
-        @include all_hearts;
-        font-size: 230%;
-        @include tablet {
-         font-size: 250%;
-    }
-}
-    to {
-        background: -webkit-linear-gradient(var(--main-color), var(--second-color));
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        font-weight: 900;
-        
-    }
-}
-
-
 .fa-regular.fa-heart {
-    @include all_hearts;
-    font-size: 230%;
-    @include tablet {
-     font-size: 250%;   
-    }
+    font-size: 3rem;
+    transition: color 1s ease-in-out;
+   
 }
-
 .fa-regular.fa-heart:hover {
-   animation: heartbeat 1s forwards;
-   -webkit-animation: heartbeat 1s forwards;
-
-}
-
-// les checkbox du plats menu ... point de suspension
-.valid input {
-    position: absolute;
-    width: 15%;
-    background-color: $colour-tertiary;
+    background: -webkit-linear-gradient(var(--main-color), var(--second-color));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
 }
 
 //bouton vert check choisir le menu

@@ -128,65 +128,68 @@
   opacity: 0.8;
 }
 
-@-webkit-keyframes heartbeat {
-  from {
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-    font-size: 230%;
-    @media (700px <= width <= 992px) {
-      font-size: 250%;
-    }
-  }
-  to {
-    background: -webkit-linear-gradient(var(--main-color), var(--second-color));
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 900;
-  }
-}
-@keyframes heartbeat {
-  from {
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-    font-size: 230%;
-    @media (700px <= width <= 992px) {
-      font-size: 250%;
-    }
-  }
-  to {
-    background: -webkit-linear-gradient(var(--main-color), var(--second-color));
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 900;
-  }
-}
 .fa-regular.fa-heart {
-  text-decoration: none;
-  cursor: pointer;
-  color: black;
-  font-size: 230%;
-}
-@media (700px <= width <= 992px) {
-  .fa-regular.fa-heart {
-    font-size: 250%;
-  }
+  font-size: 3rem;
+  transition: color 1s ease-in-out;
 }
 
 .fa-regular.fa-heart:hover {
-  animation: heartbeat 1s forwards;
-  -webkit-animation: heartbeat 1s forwards;
+  background: -webkit-linear-gradient(var(--main-color), var(--second-color));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 
-.valid input {
-  position: absolute;
-  width: 15%;
-  background-color: #99E2D0;
+/*@-webkit-keyframes heartbeat {
+    from {
+        @include all_hearts;
+        font-size: 230%;
+        @include tablet {
+         font-size: 250%;
+    }
+}
+    to {
+        background: -webkit-linear-gradient(var(--main-color), var(--second-color));
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 900;
+
+    }
+}
+@keyframes heartbeat {
+    from {
+        @include all_hearts;
+        font-size: 230%;
+        @include tablet {
+         font-size: 250%;
+    }
+}
+    to {
+        background: -webkit-linear-gradient(var(--main-color), var(--second-color));
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-weight: 900;
+
+    }
 }
 
+
+.fa-regular.fa-heart {
+    @include all_hearts;
+    font-size: 230%;
+    @include tablet {
+     font-size: 250%;   
+    }
+}
+
+.fa-regular.fa-heart:hover {
+   animation: heartbeat 1s forwards;
+   -webkit-animation: heartbeat 1s forwards;
+
+}*/
 .dish__content__resto__menu__box__icon {
   width: 0%;
   transition: opacity 1s, width 1s;
@@ -277,11 +280,8 @@
   background-color: #EAEAEA;
   width: 100%;
   height: 100%;
-  -webkit-animation-name: animateloader;
-  -webkit-animation-duration: 3s;
-  animation-name: animateloader;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+  -webkit-animation: animateloader 3s forwards;
+  animation: animateloader 3s forwards;
 }
 
 @-webkit-keyframes animateloader {
