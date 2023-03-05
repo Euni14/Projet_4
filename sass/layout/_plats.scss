@@ -1,4 +1,4 @@
-//contenant du resto
+//contenant du menu entree plat dessert
 .dish__content {
     display: flex;
     flex-direction: column;
@@ -7,31 +7,34 @@
     border: 0;
     border-radius: 40px 40px 0px 0px;
     width: 100%;
+
     @include desktop {
-      padding: 5% 0% 5% 0%;
+        padding: 5% 0% 5% 0%;
 
-      }
-
+    }
+// autre contenant pour la mise en page des marges
     &__resto {
         display: block;
         margin: auto;
         width: 95%;
+
         @include tablet {
             width: 70%;
-          }
-        @include desktop {
-            width: 60%; 
+        }
 
-          }
+        @include desktop {
+            width: 60%;
+
+        }
 
         // alignement du titre et du coeur
         &__heart {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-right: 10% ;
+            padding-right: 10%;
             align-items: baseline;
-           
+
 
             //style du titre la palette du gout
             &__palette {
@@ -39,53 +42,57 @@
                 margin-top: 50px;
                 font-size: 200%;
                 font-weight: 300;
+
                 @include tablet {
-margin-top: 70px;
-font-size: 220%;
+                    margin-top: 70px;
+                    font-size: 220%;
                 }
             }
         }
 
-        //souliment en doussous de entree
+        // box pour les menus
         &__menu {
             display: flex;
             flex-direction: column;
             gap: 25px;
+
             @include tablet {
                 gap: 45px;
             }
+        //souliment en doussous de entree
             h4 {
                 font-size: 120%;
                 font-weight: 300;
                 margin: 60px 0px 30px 0px;
-                border-bottom-width: 30%;
                 font-size: 120%;
                 position: relative;
                 line-height: 5%;
+
                 @include tablet {
                     font-size: 140%;
                     margin-top: 10%;
 
                 }
+
                 @include desktop {
                     font-size: 150%;
                 }
             }
 
-            h4:before {
+            h4::after {
                 content: '    ';
                 position: absolute;
                 left: 0;
                 top: 1rem;
                 height: 0;
-                width: 3rem;                
+                width: 3rem;
                 border-top: 4px solid $colour-tertiary;
 
                 @include tablet {
                     width: 3.5rem;
                     top: 2rem;
                 }
-                
+
             }
 
             // bordure des plats
@@ -97,94 +104,112 @@ font-size: 220%;
                 opacity: 0;
                 border-radius: 15px;
                 background-color: white;
-                box-shadow: 1.5px 1.5px 10px -2px $colour-grey-1;                
-             /// animation check sur les menus
-                &:hover & {
-                    &__icon {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 20%;
-                        height: auto;
-                        border: 2px solid $colour-tertiary;
-                        border-radius: 0px 15px 15px 0px;
-                        background-color: $colour-tertiary;
-                        opacity: 0.8;
-                        &__check {
+                box-shadow: 1.5px 1.5px 10px -2px $colour-grey-1;
+//etat initial du cadre vert et l'apparence
+                &__icon {
+
+                    width: 0%;
+                    transition: opacity 1s, width 1s;
+
+                    .fa-solid.fa-check {
+                        font-size: 1rem;
+                        color: var(--tertiary-color);
+                        opacity: 0;
+                    }
+                }
+
+                    /// animation check sur les menus
+                    &:hover & {
+                        ///le carre de couleur vert
+                        &__icon {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            border: 0;
-                            border-radius: 25px;
-                            width: 30px;
-                            height: 30px;
-                            background-color: white;
-                                }
-                    .fa-solid.fa-check {
-                        font-size: 1rem;
-                        color: $colour-tertiary;
-                        opacity: 1;
-                        
-                    }
+                            width: 20%;
+                            height: auto;
+                            border: 2px solid $colour-tertiary;
+                            border-radius: 0px 15px 15px 0px;
+                            background-color: $colour-tertiary;
+                            opacity: 0.8;
+//le cercle qui entoure le check
+                            &__check {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 0;
+                                border-radius: 25px;
+                                width: 30px;
+                                height: 30px;
+                                background-color: white;
+                            }
+//le check
+                            .fa-solid.fa-check {
+                                font-size: 1rem;
+                                color: $colour-tertiary;
+                                opacity: 1;
+
+                            }
+
+                        }
 
                     }
-                    
-                }
-                &__change {                
-                    display: flex;
-                    flex-direction: column;
-                    padding: 3%;
-                    min-width: 80%;
-                    width: 100%;
 
-                    @include tablet {
-font-size: 120%;
-                    }
-                    
-                     
-                &__price {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    @include tablet {
-font-size: 120%;
-                    }                    
+                    &__change {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 3%;
+                        min-width: 80%;
+                        width: 100%;
 
-// pour les trois points de suspension
-                    p {
-                        width: 65%;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
+                        @include tablet {
+                            font-size: 120%;
+                        }
+
+
+                        &__price {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            @include tablet {
+                                font-size: 120%;
+                            }
+
+                            // pour les trois points de suspension
+                            p h3 {
+                                width: 65%;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                        }
                     }
-                }
+
                 }
 
             }
 
         }
+    }
 
-    }
-}
-//animation d'affichage du texte
-@keyframes progressive-card {
-    0% {
-        transform:translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform:translateX(0%);
-        opacity: 1;
-    }
-  }
- 
+    //animation d'affichage du texte
+    @keyframes progressive-card {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
 
-  @for $i from 1 through $number-box {
-
-    .box#{$i}
-   {
-    animation: progressive-card 3s forwards;
-    animation-delay: $i * $animation-box-delay;
+        100% {
+            transform: translateX(0%);
+            opacity: 1;
+        }
     }
-  }
+
+// boucle pour l'entree progressive des menus
+    @for $i from 1 through $number-box {
+        .box#{$i} {
+            animation: progressive-card 3s forwards;
+            animation-delay: $i * $animation-box-delay;
+        }
+    }

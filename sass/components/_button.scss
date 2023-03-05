@@ -36,24 +36,12 @@
 }
 .fa-regular.fa-heart:hover {
     background: -webkit-linear-gradient(var(--main-color), var(--second-color));
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;//couleur de remplissage des textes
     font-weight: 900;
 }
 
-//bouton vert check choisir le menu
-.dish__content__resto__menu__box__icon {
-width: 0%;
-transition: opacity 1s, width 1s;
-    .fa-solid.fa-check {
-        font-size: 1rem;
-        color: var(--tertiary-color);
-        opacity: 0;
-       
-
-    }
-}
 // bouton degrage valider la commande
 .dish__content__resto__menu__btn {
     @include flex;

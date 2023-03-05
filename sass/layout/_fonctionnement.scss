@@ -24,6 +24,7 @@
 
     }
 // fonctionnement étape
+//bos qui contient les étapes
 &__row {
     display: flex;
     flex-direction: column;
@@ -34,21 +35,21 @@
         flex-direction: row;
         margin-bottom: 50px;
     }
-
+// le contenue des étapes icone et description
     &__stage {
         display: flex;
         align-items: baseline;
         flex-direction: row;
         position: relative;
        width: 100%;
-
+//boite des chiffres
         &__path {
             @include flex;
             border: 2px solid $colour-primary;
             background-color: $colour-primary;
             border-radius: 40px;
             padding: 13px;
-            margin-right: -12px;
+            margin-right: -12px;//position 
             width: 25px;
             height: 25px;
             z-index: 1;
@@ -67,7 +68,7 @@
                 }
             }
         }
-
+//parametre des icone
         &__icone {
             display: flex;
             justify-content: flex-start;

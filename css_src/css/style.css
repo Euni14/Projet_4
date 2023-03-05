@@ -136,20 +136,10 @@
 
 .fa-regular.fa-heart:hover {
   background: -webkit-linear-gradient(var(--main-color), var(--second-color));
-  background-clip: border-box;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-}
-
-.dish__content__resto__menu__box__icon {
-  width: 0%;
-  transition: opacity 1s, width 1s;
-}
-.dish__content__resto__menu__box__icon .fa-solid.fa-check {
-  font-size: 1rem;
-  color: var(--tertiary-color);
-  opacity: 0;
 }
 
 .dish__content__resto__menu__btn {
@@ -574,7 +564,6 @@
   font-size: 120%;
   font-weight: 300;
   margin: 60px 0px 30px 0px;
-  border-bottom-width: 30%;
   font-size: 120%;
   position: relative;
   line-height: 5%;
@@ -590,7 +579,7 @@
     font-size: 150%;
   }
 }
-.dish__content__resto__menu h4:before {
+.dish__content__resto__menu h4::after {
   content: "    ";
   position: absolute;
   left: 0;
@@ -600,7 +589,7 @@
   border-top: 4px solid #99E2D0;
 }
 @media (700px <= width <= 992px) {
-  .dish__content__resto__menu h4:before {
+  .dish__content__resto__menu h4::after {
     width: 3.5rem;
     top: 2rem;
   }
@@ -614,6 +603,15 @@
   border-radius: 15px;
   background-color: white;
   box-shadow: 1.5px 1.5px 10px -2px #353535;
+}
+.dish__content__resto__menu__box__icon {
+  width: 0%;
+  transition: opacity 1s, width 1s;
+}
+.dish__content__resto__menu__box__icon .fa-solid.fa-check {
+  font-size: 1rem;
+  color: var(--tertiary-color);
+  opacity: 0;
 }
 .dish__content__resto__menu__box:hover .dish__content__resto__menu__box__icon {
   display: flex;
