@@ -105,6 +105,7 @@
                 border-radius: 15px;
                 background-color: white;
                 box-shadow: 1.5px 1.5px 10px -2px $colour-grey-1;
+               
 //etat initial du cadre vert et l'apparence
                 &__icon {
 
@@ -160,6 +161,13 @@
                         padding: 3%;
                         min-width: 80%;
                         width: 100%;
+                        h3 {
+                            width: 65%;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                        }
+                        
 
                         @include tablet {
                             font-size: 120%;
@@ -177,7 +185,7 @@
                             }
 
                             // pour les trois points de suspension
-                            p h3 {
+                            p {
                                 width: 65%;
                                 text-overflow: ellipsis;
                                 white-space: nowrap;

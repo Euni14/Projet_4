@@ -646,6 +646,12 @@
   min-width: 80%;
   width: 100%;
 }
+.dish__content__resto__menu__box__change h3 {
+  width: 65%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 @media (700px <= width <= 992px) {
   .dish__content__resto__menu__box__change {
     font-size: 120%;
